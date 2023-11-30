@@ -15,24 +15,24 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center w-full h-screen space-y-8">
       <h3 className="text-2xl font-bold text-center text-gray-800">
-        Generating your imaginary persona
+        Generating your imaginary Persona
       </h3>
 
-      <div className="flex flex-col items-center justify-center mt-8 space-y-4">
+      <div className="flex flex-col items-center justify-center space-y-4">
         {threeRandomInfo.map((info) => (
           <div
             key={info.email}
             className="flex items-center justify-between w-96"
           >
             <div className="flex flex-col">
-              <div className="flex flex-row items-center justify-between">
+              <div className="flex flex-row items-center justify-between w-96">
                 <p className="text-lg font-semibold text-gray-800">
                   {info.name}
                 </p>
                 <CopyButton value={info.name} />
               </div>
               <div
-                className="flex flex-row items-center justify-between"
+                className="flex flex-row items-center justify-between w-96"
                 key={info.email}
               >
                 <p className="text-sm text-gray-500">{info.email}</p>
