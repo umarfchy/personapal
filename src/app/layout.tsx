@@ -10,7 +10,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Personapal",
+  title: "PersonaPal",
   description: "Generate your imaginary Persona",
 };
 
