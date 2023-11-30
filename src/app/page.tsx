@@ -1,17 +1,17 @@
 import { CopyButton } from "~/components/CopyButton";
 import { faker } from "@faker-js/faker";
 
-const threeRandomInfo = Array.from({ length: 3 }, () => {
-  const randomName = faker.person.fullName();
-  const randomEmail = faker.internet.email();
-
-  return {
-    name: randomName,
-    email: randomEmail,
-  };
-});
-
 export default function Home() {
+  const threeRandomInfo = Array.from({ length: 3 }, () => {
+    const randomName = faker.person.fullName();
+    const randomEmail = faker.internet.email();
+
+    return {
+      name: randomName,
+      email: randomEmail,
+    };
+  });
+
   return (
     <main className="flex flex-col items-center justify-center w-full h-screen space-y-8">
       <h3 className="text-2xl font-bold text-center text-gray-800">
