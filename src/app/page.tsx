@@ -1,7 +1,9 @@
 import { CopyButton } from "~/components/CopyButton";
 import { faker } from "@faker-js/faker";
 
-export default async function Home() {
+export const dynamic = "force-dynamic";
+
+export default function Home() {
   const threeRandomInfo = Array.from({ length: 3 }, () => {
     const randomName = faker.person.fullName();
     const randomEmail = faker.internet.email();
